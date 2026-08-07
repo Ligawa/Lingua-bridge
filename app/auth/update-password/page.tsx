@@ -31,7 +31,7 @@ export default function UpdatePasswordPage() {
     <div className="flex min-h-screen items-center justify-center bg-primary px-4">
       <div className="w-full max-w-md">
         <div className="mb-8 flex flex-col items-center gap-3 text-center">
-          <Link href="/"><Image src="/logo.jpg" alt="IICAR" width={72} height={72} className="rounded-xl" priority /></Link>
+          <Link href="/"><Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={72} height={72} className="rounded-xl object-cover" priority /></Link>
           <h1 className="text-xl font-bold text-primary-foreground">Set New Password</h1>
         </div>
         <div className="rounded-2xl bg-card p-8 shadow-xl border border-border">

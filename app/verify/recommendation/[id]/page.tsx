@@ -87,7 +87,7 @@ export default async function VerifyRecommendationPage({
                     ? 'Letter of Recommendation'
                     : 'Professional Endorsement'}
                 </h2>
-                <p className="text-sm text-gray-300">This document has been officially issued by IICAR Global College</p>
+                <p className="text-sm text-gray-300">This document has been officially issued by LinguaBridge</p>
               </div>
               <Badge className="bg-green-600 hover:bg-green-700">VERIFIED</Badge>
             </div>
@@ -131,7 +131,7 @@ export default async function VerifyRecommendationPage({
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Issuing Institution:</span>
-                  <span className="font-semibold text-foreground">IICAR Global College</span>
+                  <span className="font-semibold text-foreground">LinguaBridge</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Registrar:</span>
@@ -146,7 +146,7 @@ export default async function VerifyRecommendationPage({
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {recommendation.recommendation_type === 'recommendation'
                   ? `This letter of recommendation certifies that ${studentName} has successfully completed professional training in ${programTitle} and is recommended for positions requiring these competencies.`
-                  : `This professional endorsement certifies that ${studentName} has demonstrated mastery and competency in ${programTitle} as offered by IICAR Global College.`}
+                  : `This professional endorsement certifies that ${studentName} has demonstrated mastery and competency in ${programTitle} as offered by LinguaBridge.`}
               </p>
             </div>
 
@@ -165,7 +165,7 @@ export default async function VerifyRecommendationPage({
 
           {/* Footer */}
           <div className="border-t border-border bg-muted/40 px-6 py-4 text-center text-sm text-muted-foreground">
-            <p>This document is valid and can be verified using the ID above on the IICAR Global College website.</p>
+            <p>This document is valid and can be verified using the ID above on the LinguaBridge website.</p>
           </div>
         </div>
 
@@ -173,7 +173,7 @@ export default async function VerifyRecommendationPage({
         <div className="mt-8 text-center">
           <div className="inline-block rounded-lg border border-border bg-card px-6 py-4">
             <p className="text-sm font-medium text-foreground mb-2">
-              ✓ Verified by IICAR Global College
+              ✓ Verified by LinguaBridge
             </p>
             <p className="text-xs text-muted-foreground">
               Document verification is secured and auditable
@@ -192,7 +192,7 @@ export async function generateMetadata({
 }) {
   const { id } = await params
   return {
-    title: `Verify Recommendation - IICAR Global College`,
-    description: `View and verify your professional recommendation from IICAR Global College using document ID: ${id}`,
+    title: `Verify Recommendation - LinguaBridge`,
+    description: `View and verify your professional recommendation from LinguaBridge using document ID: ${id}`,
   }
 }

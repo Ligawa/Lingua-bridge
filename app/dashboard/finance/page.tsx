@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { FinanceClient } from '@/components/finance-client'
 
 export const metadata = {
-  title: 'Finance | IICAR Global College',
+  title: 'Finance | LinguaBridge',
   description: 'Manage your wallet and payment plans',
 }
 

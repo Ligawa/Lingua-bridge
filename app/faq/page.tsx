@@ -10,16 +10,16 @@ export default function FAQPage() {
 
   const faqs = [
     {
-      id: 'what-is-iicar',
-      category: 'About IICAR',
-      question: 'What is IICAR Global College?',
-      answer: 'IICAR Global College is a USA-accredited professional educational institution offering self-paced certification programs for working professionals. We are registered in California, USA and deliver industry-aligned courses that are recognized globally.'
+      id: 'about-linguabridge',
+      category: 'About LinguaBridge',
+      question: 'What is LinguaBridge Global College?',
+      answer: 'LinguaBridge Global College is a USA-accredited professional educational institution offering self-paced certification programs for working professionals. We are registered in California, USA and deliver industry-aligned courses that are recognized globally.'
     },
     {
       id: 'accreditation',
-      category: 'About IICAR',
-      question: 'Is IICAR accredited?',
-      answer: 'Yes, IICAR is a USA-accredited institution registered as Acclaim Academic Institute, Inc. in the State of California. All our programs meet professional accreditation standards and deliver certifications recognized internationally.'
+      category: 'About LinguaBridge',
+      question: 'Is LinguaBridge accredited?',
+      answer: 'Yes, LinguaBridge is a USA-accredited institution registered as Acclaim Academic Institute, Inc. in the State of California. All our programs meet professional accreditation standards and deliver certifications recognized internationally.'
     },
     {
       id: 'how-to-enroll',

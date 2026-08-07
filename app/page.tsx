@@ -26,10 +26,10 @@ export default async function HomePage() {
       <header className="sticky top-0 z-50 border-b border-primary/20 bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo.jpg" alt="IICAR logo" width={44} height={44} className="rounded-lg" priority />
+            <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={44} height={44} className="rounded-lg" priority />
             <div className="hidden sm:block">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent">IICAR Global College</p>
-              <p className="text-[10px] text-primary-foreground/50 leading-tight">Institute of International Career Advancement</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-accent">LinguaBridge</p>
+              <p className="text-[10px] text-primary-foreground/50 leading-tight">Translations &amp; Short Courses</p>
             </div>
           </Link>
           <nav className="hidden items-center gap-6 md:flex">
@@ -58,10 +58,10 @@ export default async function HomePage() {
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="animate-fade-in-up text-4xl font-bold leading-tight tracking-tight text-balance md:text-5xl lg:text-6xl">
-              Advance Your Career with Globally Recognised Certifications
+              Urgent Translations. Practical Courses. Global Connections.
             </h1>
             <p className="animate-fade-in-up animate-delay-200 mt-6 text-lg leading-relaxed text-primary-foreground/90 text-pretty">
-              IICAR Global College delivers structured, self-paced professional certification programs accredited and recognized by USA professional standards. Learn at your pace — earn credentials that open doors.
+              LinguaBridge provides fast, reliable document translations when timing matters, alongside practical short courses that help you grow with confidence.
             </p>
             <div className="animate-fade-in-up animate-delay-400 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-10 hover-lift">
@@ -76,10 +76,10 @@ export default async function HomePage() {
         <div className="border-t border-white/10">
           <div className="mx-auto grid max-w-7xl grid-cols-2 md:grid-cols-4">
             {[
-              { label: 'Programs Offered', value: '20+' },
-              { label: 'Students Enrolled', value: '5,000+' },
+              { label: 'Languages Supported', value: '30+' },
+              { label: 'Translation Requests', value: '5,000+' },
               { label: 'Countries Reached', value: '40+' },
-              { label: 'Certificates Issued', value: '3,200+' },
+              { label: 'Short Courses', value: '20+' },
             ].map((stat, i) => (
               <div key={stat.label} className={`animate-fade-in-up animate-delay-${(i + 1) * 100} flex flex-col items-center border-r border-white/10 last:border-r-0 py-8 text-center`}>
                 <span className="text-3xl font-bold text-accent">{stat.value}</span>
@@ -90,12 +90,12 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* WHY IICAR */}
+      {/* WHY LINGUABRIDGE */}
       <section className="py-20 bg-gradient-to-b from-background to-muted/30">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
-            <h2 className="text-3xl font-bold text-primary">Why Choose IICAR?</h2>
-            <p className="mt-3 text-muted-foreground">Everything you need for a recognised professional qualification</p>
+            <h2 className="text-3xl font-bold text-primary">Language Support That Moves With You</h2>
+            <p className="mt-3 text-muted-foreground">Fast translations and flexible learning for work, study, and life</p>
           </div>
           <div className="grid gap-8 lg:grid-cols-2">
             {/* Feature Cards */}
@@ -117,7 +117,7 @@ export default async function HomePage() {
             </div>
             {/* Visual */}
             <div className="relative rounded-2xl overflow-hidden shadow-lg border border-border image-zoom">
-              <Image src="/campus-main.jpg" alt="IICAR Global College Campus" width={600} height={500} className="w-full h-full object-cover" priority />
+              <Image src="/campus-main.jpg" alt="LinguaBridge Global College Campus" width={600} height={500} className="w-full h-full object-cover" priority />
             </div>
           </div>
         </div>
@@ -127,8 +127,8 @@ export default async function HomePage() {
       <section id="programs" className="bg-muted/40 py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
-            <h2 className="text-3xl font-bold text-primary">Professional Programs</h2>
-            <p className="mt-3 text-muted-foreground">Industry-aligned certifications built for working professionals</p>
+            <h2 className="text-3xl font-bold text-primary">Short Courses</h2>
+            <p className="mt-3 text-muted-foreground">Practical, self-paced learning built for busy professionals</p>
             <Link href="/programs" className="inline-flex items-center gap-2 mt-4 text-primary hover:text-primary/80 transition-colors text-sm font-medium">
               Browse All Programs
               <ChevronRight className="h-4 w-4" />
@@ -180,7 +180,7 @@ export default async function HomePage() {
                 { step: '01', title: 'Register & Enroll', desc: 'Create your account and enroll in your chosen certification program.' },
                 { step: '02', title: 'Learn at Your Pace', desc: 'Access professionally designed lessons organised by module. Study on any device, anytime.' },
                 { step: '03', title: 'Pass Assessments', desc: 'Complete module quizzes and a final exam to demonstrate your mastery.' },
-                { step: '04', title: 'Get Certified', desc: 'Receive a verifiable digital certificate with a unique IICAR ID upon completion.' },
+                { step: '04', title: 'Get Certified', desc: 'Receive a verifiable digital certificate with a unique LinguaBridge ID upon completion.' },
               ].map(({ step, title, desc }, i) => (
                 <div key={step} className={`animate-fade-in-up animate-delay-${i * 100} flex flex-col items-start text-left gap-4 p-6 rounded-xl bg-background border border-border hover-lift transition-all`}>
                   <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-accent bg-primary text-accent font-bold text-lg">
@@ -193,7 +193,7 @@ export default async function HomePage() {
             </div>
             {/* Visual */}
             <div className="relative rounded-2xl overflow-hidden shadow-lg border border-border h-96 image-zoom">
-              <Image src="/campus-students.jpg" alt="IICAR students on campus" width={600} height={500} className="w-full h-full object-cover" priority />
+              <Image src="/campus-students.jpg" alt="LinguaBridge students on campus" width={600} height={500} className="w-full h-full object-cover" priority />
             </div>
           </div>
         </div>
@@ -316,7 +316,7 @@ export default async function HomePage() {
           <h2 className="mb-14 text-center text-3xl font-bold">What Our Students Say</h2>
           <div className="grid gap-8 md:grid-cols-3">
             {[
-              { name: 'Amara N.', country: 'Nigeria', quote: 'IICAR gave me a credential that opened doors I never thought possible. The professional content is genuinely excellent.' },
+              { name: 'Amara N.', country: 'Nigeria', quote: 'LinguaBridge gave me a credential that opened doors I never thought possible. The professional content is genuinely excellent.' },
               { name: 'Raj P.', country: 'India', quote: 'I completed my certification while working full time. The self-paced structure is exactly what busy professionals need.' },
               { name: 'Sofia M.', country: 'Brazil', quote: 'The verification feature is fantastic — my employer confirmed my certificate within minutes. Highly professional.' },
             ].map(({ name, country, quote }) => (
@@ -344,7 +344,7 @@ export default async function HomePage() {
             Limited Time Offer
           </Badge>
           <h2 className="text-4xl font-bold leading-tight md:text-5xl">Ready to Advance Your Career?</h2>
-          <p className="mt-6 text-lg text-primary-foreground/80 leading-relaxed">Join thousands of professionals who have earned globally recognised IICAR certifications. Start your journey today with a free account.</p>
+          <p className="mt-6 text-lg text-primary-foreground/80 leading-relaxed">Get the language support you need today, or build your next skill through a flexible LinguaBridge short course.</p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-10">
               <Link href="/auth/register">Create Free Account</Link>
@@ -362,9 +362,9 @@ export default async function HomePage() {
           <div className="grid gap-8 md:grid-cols-4 mb-12">
             <div className="md:col-span-1">
               <div className="flex items-center gap-3 mb-4">
-                <Image src="/logo.jpg" alt="IICAR" width={40} height={40} className="rounded-md" />
+                <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={40} height={40} className="rounded-md object-cover" />
                 <div>
-                  <p className="text-sm font-bold text-accent">IICAR</p>
+                  <p className="text-sm font-bold text-accent">LinguaBridge</p>
                   <p className="text-xs text-primary-foreground/50">Global College</p>
                 </div>
               </div>
@@ -396,7 +396,7 @@ export default async function HomePage() {
           </div>
           <div className="border-t border-white/10 pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-xs text-primary-foreground/40">&copy; {new Date().getFullYear()} IICAR Global College. All rights reserved.</p>
+              <p className="text-xs text-primary-foreground/40">&copy; {new Date().getFullYear()} LinguaBridge Global College. All rights reserved.</p>
               <div className="flex gap-6 text-xs text-primary-foreground/60">
                 <span>Institute of International Career Advancement and Recognition</span>
               </div>

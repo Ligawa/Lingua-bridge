@@ -364,7 +364,7 @@ export async function GET(
 
         <div class="certificate-container">
           <div class="certificate-header">
-            <div class="institution-name">IICAR GLOBAL COLLEGE</div>
+            <div class="institution-name">LINGUABRIDGE</div>
             <div class="institution-tagline">${lang === 'ar' ? 'معهد التطوير المهني الدولي والاعتراف' : lang === 'fr' ? 'Institut International d\'Avancement et de Reconnaissance de Carrière' : lang === 'pt' ? 'Instituto Internacional de Desenvolvimento de Carreira e Reconhecimento' : 'Institute of International Career Advancement and Recognition'}</div>
             <div class="header-divider"></div>
             <div class="certificate-title">${translations.certificateTitle}</div>
@@ -386,7 +386,7 @@ export async function GET(
             <div class="signature-block">
               <div class="signature-line"></div>
               <div class="signature-title">${translations.directorPrograms}</div>
-              <div class="signature-subtitle">IICAR Global College</div>
+              <div class="signature-subtitle">LinguaBridge</div>
             </div>
             <div class="signature-block">
               <div class="signature-line"></div>

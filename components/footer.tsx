@@ -46,11 +46,11 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Image src="/logo.jpg" alt="IICAR" width={40} height={40} className="rounded-lg" />
-              <span className="font-bold text-lg">IICAR</span>
+              <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={40} height={40} className="rounded-lg" />
+              <span className="font-bold text-lg">LinguaBridge</span>
             </div>
             <p className="text-slate-400 text-sm mb-3">
-              International Institute for Certified Administrative Resources — Professional certification programs recognised globally.
+              Urgent translation services and practical short courses connecting people, work, and opportunity across languages.
             </p>
             <div className="bg-slate-800 rounded px-3 py-2 border border-slate-700">
               <p className="text-xs text-blue-300 font-semibold">USA-Accredited Institution</p>
@@ -122,7 +122,7 @@ export function Footer() {
             <a href="#" className="text-slate-400 hover:text-white transition"><Linkedin className="h-5 w-5" /></a>
             <a href="#" className="text-slate-400 hover:text-white transition"><Instagram className="h-5 w-5" /></a>
           </div>
-          <p className="text-slate-500 text-sm">© 2024 IICAR. All rights reserved.</p>
+          <p className="text-slate-500 text-sm">© 2024 LinguaBridge. All rights reserved.</p>
         </div>
       </div>
     </footer>
