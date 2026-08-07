@@ -19,8 +19,8 @@ interface Program {
 export const dynamic = 'force-dynamic'
 
 export const metadata = {
-  title: 'Professional Programs | IICAR Global College',
-  description: 'Browse all professional certification programs offered by IICAR Global College.',
+  title: 'Short Courses | LinguaBridge',
+  description: 'Browse practical short courses from LinguaBridge, designed for flexible professional development.',
 }
 
 export default async function ProgramsPage() {
@@ -42,9 +42,9 @@ export default async function ProgramsPage() {
       <header className="sticky top-0 z-40 border-b border-primary/20 bg-primary text-primary-foreground">
         <div className="mx-auto max-w-7xl px-6 py-4">
           <Link href="/" className="flex items-center gap-3 mb-4 hover:opacity-80 transition-opacity">
-            <Image src="/logo.jpg" alt="IICAR logo" width={40} height={40} className="rounded-lg" />
+            <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={40} height={40} className="rounded-lg object-cover" />
             <div>
-              <p className="text-sm font-bold uppercase tracking-widest">IICAR Global College</p>
+              <p className="text-sm font-bold uppercase tracking-widest">LinguaBridge</p>
               <p className="text-xs text-primary-foreground/70">Professional Programs</p>
             </div>
           </Link>

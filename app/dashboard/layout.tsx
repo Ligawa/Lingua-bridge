@@ -33,9 +33,9 @@ export default async function DashboardLayout({ children }: { children: React.Re
       {/* DESKTOP SIDEBAR */}
       <aside className="hidden md:flex fixed inset-y-0 left-0 z-40 w-64 flex-col bg-sidebar text-sidebar-foreground border-r border-sidebar-border">
         <div className="flex items-center gap-3 border-b border-sidebar-border px-6 py-5">
-          <Image src="/logo.jpg" alt="IICAR" width={40} height={40} className="rounded-lg" priority />
+          <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={40} height={40} className="rounded-lg object-cover" priority />
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-sidebar-primary">IICAR</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-sidebar-primary">LinguaBridge</p>
             <p className="text-[10px] text-sidebar-foreground/40 leading-tight">Student Portal</p>
           </div>
         </div>

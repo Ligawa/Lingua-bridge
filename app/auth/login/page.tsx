@@ -36,9 +36,9 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         <div className="mb-8 flex flex-col items-center gap-3 text-center">
           <Link href="/">
-            <Image src="/logo.jpg" alt="IICAR" width={72} height={72} className="rounded-xl" priority />
+            <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={72} height={72} className="rounded-xl" priority />
           </Link>
-          <h1 className="text-xl font-bold text-primary-foreground">Sign in to IICAR</h1>
+          <h1 className="text-xl font-bold text-primary-foreground">Sign in to LinguaBridge</h1>
           <p className="text-sm text-primary-foreground/60">Access your student portal</p>
         </div>
         <div className="rounded-2xl bg-card p-8 shadow-xl border border-border">

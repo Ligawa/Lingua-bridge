@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { WalletTopupForm } from '@/components/wallet-topup-form'
 
 export const metadata = {
-  title: 'Top Up Wallet | IICAR Global College',
+  title: 'Top Up Wallet | LinguaBridge',
   description: 'Add funds to your wallet using Paystack',
 }
 

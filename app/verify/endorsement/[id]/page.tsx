@@ -87,7 +87,7 @@ export default async function VerifyEndorsementPage({
                   <Award className="h-6 w-6" />
                   Professional Endorsement
                 </h2>
-                <p className="text-sm text-gray-200">This document officially endorses professional competency from IICAR Global College</p>
+                <p className="text-sm text-gray-200">This document officially endorses professional competency from LinguaBridge</p>
               </div>
               <Badge className="bg-amber-600 hover:bg-amber-700">ENDORSED</Badge>
             </div>
@@ -131,7 +131,7 @@ export default async function VerifyEndorsementPage({
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Issuing Institution:</span>
-                  <span className="font-semibold text-foreground">IICAR Global College</span>
+                  <span className="font-semibold text-foreground">LinguaBridge</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Endorsed By:</span>
@@ -145,7 +145,7 @@ export default async function VerifyEndorsementPage({
               <h3 className="font-semibold text-foreground mb-2">About This Endorsement</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 This professional endorsement certifies that {studentName} has successfully completed and demonstrated mastery in {programTitle}. 
-                This endorsement verifies professional competency and readiness for advancement in the field, authorized by IICAR Global College's Office of the Registrar.
+                This endorsement verifies professional competency and readiness for advancement in the field, authorized by LinguaBridge's Office of the Registrar.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export default async function VerifyEndorsementPage({
 
           {/* Footer */}
           <div className="border-t border-border bg-muted/40 px-6 py-4 text-center text-sm text-muted-foreground">
-            <p>This professional endorsement is valid and verifiable using the document ID through IICAR Global College.</p>
+            <p>This professional endorsement is valid and verifiable using the document ID through LinguaBridge.</p>
           </div>
         </div>
 
@@ -188,7 +188,7 @@ export default async function VerifyEndorsementPage({
         <div className="mt-8 text-center">
           <div className="inline-block rounded-lg border border-amber-200 bg-amber-50 dark:bg-amber-950/20 px-6 py-4">
             <p className="text-sm font-medium text-foreground mb-2">
-              🏆 Endorsed by IICAR Global College
+              🏆 Endorsed by LinguaBridge
             </p>
             <p className="text-xs text-muted-foreground">
               This endorsement is officially recognized and verifiable
@@ -207,7 +207,7 @@ export async function generateMetadata({
 }) {
   const { id } = await params
   return {
-    title: `Verify Professional Endorsement - IICAR Global College`,
-    description: `View and verify your professional endorsement from IICAR Global College using document ID: ${id}`,
+    title: `Verify Professional Endorsement - LinguaBridge`,
+    description: `View and verify your professional endorsement from LinguaBridge using document ID: ${id}`,
   }
 }

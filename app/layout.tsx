@@ -8,15 +8,17 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' })
 const lato = Lato({ subsets: ['latin'], weight: ['400', '700', '900'], variable: '--font-body', display: 'swap' })
 
+const linguaBridgeLogo = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png'
+
 export const metadata: Metadata = {
-  title: 'IICAR Global College – Professional Certification',
+  title: 'LinguaBridge – Urgent Translations & Short Courses',
   description:
-    'Institute of International Career Advancement and Recognition — self-paced professional certification programs recognised globally.',
-  icons: { icon: '/logo.jpg', apple: '/logo.jpg' },
+    'LinguaBridge connects people and opportunities through urgent professional translations and practical short courses.',
+  icons: { icon: linguaBridgeLogo, apple: linguaBridgeLogo },
 }
 
 export const viewport: Viewport = {
-  themeColor: '#0f172a',
+  themeColor: '#0b1f4d',
   width: 'device-width',
   initialScale: 1,
 }

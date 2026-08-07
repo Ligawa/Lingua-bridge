@@ -46,16 +46,12 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Image src="/logo.jpg" alt="IICAR" width={40} height={40} className="rounded-lg" />
-              <span className="font-bold text-lg">IICAR</span>
+              <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={40} height={40} className="rounded-lg" />
+              <span className="font-bold text-lg">LinguaBridge</span>
             </div>
             <p className="text-slate-400 text-sm mb-3">
-              International Institute for Certified Administrative Resources — Professional certification programs recognised globally.
+              Urgent translation services and practical short courses connecting people, work, and opportunity across languages.
             </p>
-            <div className="bg-slate-800 rounded px-3 py-2 border border-slate-700">
-              <p className="text-xs text-blue-300 font-semibold">USA-Accredited Institution</p>
-              <p className="text-xs text-slate-400 mt-1">Registered in California, USA • Acclaim Academic Institute, Inc.</p>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -86,32 +82,19 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-1 flex-shrink-0 text-blue-400" />
-                <span className="text-slate-400">California, USA</span>
+                <span className="text-slate-400">United Kingdom</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 flex-shrink-0 text-blue-400" />
-                <a href="tel:0202225689" className="text-slate-400 hover:text-white transition">0202225689</a>
+                <a href="tel:+447846909616" className="text-slate-400 hover:text-white transition">+44 7846 909616</a>
               </li>
               <li className="flex items-center gap-2">
                 <MailIcon className="h-4 w-4 flex-shrink-0 text-blue-400" />
-                <a href="mailto:info@iicar.org" className="text-slate-400 hover:text-white transition">info@iicar.org</a>
+                <a href="mailto:info@linguabridge.com" className="text-slate-400 hover:text-white transition">info@linguabridge.com</a>
               </li>
             </ul>
           </div>
 
-          {/* Singapore Operations */}
-          <div>
-            <h4 className="font-semibold mb-4">Singapore Operations</h4>
-            <div className="text-sm space-y-2">
-              <p className="text-slate-400">Our Singapore courses are offered through:</p>
-              <p className="text-slate-300 font-medium">GLOBAL BW COLLEGE PTE. LTD.</p>
-              <ul className="text-slate-400 space-y-1 text-xs">
-                <li><strong>UEN:</strong> 202327580E</li>
-                <li><strong>SSIC:</strong> 85404</li>
-                <li className="break-words"><strong>Address:</strong> 482 Pasir Ris Drive 4, #08-393, Singapore 510482</li>
-              </ul>
-            </div>
-          </div>
         </div>
 
         {/* Social Links */}
@@ -122,7 +105,7 @@ export function Footer() {
             <a href="#" className="text-slate-400 hover:text-white transition"><Linkedin className="h-5 w-5" /></a>
             <a href="#" className="text-slate-400 hover:text-white transition"><Instagram className="h-5 w-5" /></a>
           </div>
-          <p className="text-slate-500 text-sm">© 2024 IICAR. All rights reserved.</p>
+          <p className="text-slate-500 text-sm">© 2024 LinguaBridge. All rights reserved.</p>
         </div>
       </div>
     </footer>

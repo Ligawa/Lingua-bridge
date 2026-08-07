@@ -1,12 +1,12 @@
 import { createClient, createAdminClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
-import { CreditCard, ArrowDownRight, ArrowUpRight, Plus, AlertCircle } from 'lucide-react'
+import { CreditCard, ArrowDownRight, ArrowUpRight, Plus } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { FinanceClient } from '@/components/finance-client'
 
 export const metadata = {
-  title: 'Finance | IICAR Global College',
+  title: 'Finance | LinguaBridge',
   description: 'Manage your wallet and payment plans',
 }
 
@@ -92,19 +92,6 @@ export default async function FinancePage() {
               <ArrowDownRight className="h-4 w-4 mr-2" />
               View History
             </Button>
-          </div>
-        </div>
-
-        {/* Singapore Entity Information */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 flex gap-3">
-          <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
-          <div>
-            <h3 className="font-semibold text-blue-900 mb-1">Singapore Operations</h3>
-            <p className="text-sm text-blue-800">
-              Our Singapore courses are offered through <strong>GLOBAL BW COLLEGE PTE. LTD.</strong><br />
-              UEN: 202327580E | Industry: Commercial schools offering tertiary education programmes<br />
-              Address: 482 Pasir Ris Drive 4, #08-393, Singapore 510482
-            </p>
           </div>
         </div>
 

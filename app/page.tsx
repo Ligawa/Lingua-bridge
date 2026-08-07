@@ -26,10 +26,10 @@ export default async function HomePage() {
       <header className="sticky top-0 z-50 border-b border-primary/20 bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo.jpg" alt="IICAR logo" width={44} height={44} className="rounded-lg" priority />
+            <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={44} height={44} className="rounded-lg" priority />
             <div className="hidden sm:block">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent">IICAR Global College</p>
-              <p className="text-[10px] text-primary-foreground/50 leading-tight">Institute of International Career Advancement</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-accent">LinguaBridge</p>
+              <p className="text-[10px] text-primary-foreground/50 leading-tight">Translations &amp; Short Courses</p>
             </div>
           </Link>
           <nav className="hidden items-center gap-6 md:flex">
@@ -52,16 +52,16 @@ export default async function HomePage() {
       {/* HERO */}
       <section className="relative bg-primary text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <Image src="/campus-night.jpg" alt="" fill className="object-cover" priority />
+          <Image src="/images/linguabridge/translation-hero.png" alt="Multilingual documents prepared for urgent translation" fill className="object-cover" priority />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/70 to-primary" />
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="animate-fade-in-up text-4xl font-bold leading-tight tracking-tight text-balance md:text-5xl lg:text-6xl">
-              Advance Your Career with Globally Recognised Certifications
+              Urgent Translations. Practical Courses. Global Connections.
             </h1>
             <p className="animate-fade-in-up animate-delay-200 mt-6 text-lg leading-relaxed text-primary-foreground/90 text-pretty">
-              IICAR Global College delivers structured, self-paced professional certification programs accredited and recognized by USA professional standards. Learn at your pace — earn credentials that open doors.
+              LinguaBridge provides fast, reliable document translations when timing matters, alongside practical short courses that help you grow with confidence.
             </p>
             <div className="animate-fade-in-up animate-delay-400 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-10 hover-lift">
@@ -76,10 +76,10 @@ export default async function HomePage() {
         <div className="border-t border-white/10">
           <div className="mx-auto grid max-w-7xl grid-cols-2 md:grid-cols-4">
             {[
-              { label: 'Programs Offered', value: '20+' },
-              { label: 'Students Enrolled', value: '5,000+' },
+              { label: 'Languages Supported', value: '30+' },
+              { label: 'Translation Requests', value: '5,000+' },
               { label: 'Countries Reached', value: '40+' },
-              { label: 'Certificates Issued', value: '3,200+' },
+              { label: 'Short Courses', value: '20+' },
             ].map((stat, i) => (
               <div key={stat.label} className={`animate-fade-in-up animate-delay-${(i + 1) * 100} flex flex-col items-center border-r border-white/10 last:border-r-0 py-8 text-center`}>
                 <span className="text-3xl font-bold text-accent">{stat.value}</span>
@@ -90,12 +90,12 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* WHY IICAR */}
+      {/* WHY LINGUABRIDGE */}
       <section className="py-20 bg-gradient-to-b from-background to-muted/30">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
-            <h2 className="text-3xl font-bold text-primary">Why Choose IICAR?</h2>
-            <p className="mt-3 text-muted-foreground">Everything you need for a recognised professional qualification</p>
+            <h2 className="text-3xl font-bold text-primary">Language Support That Moves With You</h2>
+            <p className="mt-3 text-muted-foreground">Fast translations and flexible learning for work, study, and life</p>
           </div>
           <div className="grid gap-8 lg:grid-cols-2">
             {/* Feature Cards */}
@@ -104,7 +104,7 @@ export default async function HomePage() {
                 { icon: BookOpen, title: 'Expert-Crafted Content', desc: 'Professional curriculum developed and refined by domain experts with rigorous quality assurance.' },
                 { icon: Award, title: 'Verifiable Certificates', desc: 'Every certificate carries a unique ID instantly verifiable on our public portal.' },
                 { icon: Globe, title: 'Learn Anywhere', desc: 'Fully self-paced and accessible on any device from any country, 24/7.' },
-                { icon: Shield, title: 'USA-Accredited Standards', desc: 'Built on transparent academic standards with proctored assessments, professional credibility guaranteed.' },
+                { icon: Shield, title: 'Quality Assured', desc: 'Clear service standards, careful review, and transparent processes from first request to final delivery.' },
               ].map(({ icon: Icon, title, desc }, i) => (
                 <div key={title} className={`animate-fade-in-up animate-delay-${i * 100} flex flex-col gap-4 rounded-xl border border-border bg-card p-6 shadow-sm hover:shadow-md hover-lift transition-all`}>
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary">
@@ -117,7 +117,7 @@ export default async function HomePage() {
             </div>
             {/* Visual */}
             <div className="relative rounded-2xl overflow-hidden shadow-lg border border-border image-zoom">
-              <Image src="/campus-main.jpg" alt="IICAR Global College Campus" width={600} height={500} className="w-full h-full object-cover" priority />
+              <Image src="/images/linguabridge/translator-at-work.png" alt="Professional translator reviewing multilingual documents" width={600} height={500} className="w-full h-full object-cover" priority />
             </div>
           </div>
         </div>
@@ -127,8 +127,8 @@ export default async function HomePage() {
       <section id="programs" className="bg-muted/40 py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
-            <h2 className="text-3xl font-bold text-primary">Professional Programs</h2>
-            <p className="mt-3 text-muted-foreground">Industry-aligned certifications built for working professionals</p>
+            <h2 className="text-3xl font-bold text-primary">Short Courses</h2>
+            <p className="mt-3 text-muted-foreground">Practical, self-paced learning built for busy professionals</p>
             <Link href="/programs" className="inline-flex items-center gap-2 mt-4 text-primary hover:text-primary/80 transition-colors text-sm font-medium">
               Browse All Programs
               <ChevronRight className="h-4 w-4" />
@@ -180,7 +180,7 @@ export default async function HomePage() {
                 { step: '01', title: 'Register & Enroll', desc: 'Create your account and enroll in your chosen certification program.' },
                 { step: '02', title: 'Learn at Your Pace', desc: 'Access professionally designed lessons organised by module. Study on any device, anytime.' },
                 { step: '03', title: 'Pass Assessments', desc: 'Complete module quizzes and a final exam to demonstrate your mastery.' },
-                { step: '04', title: 'Get Certified', desc: 'Receive a verifiable digital certificate with a unique IICAR ID upon completion.' },
+                { step: '04', title: 'Get Certified', desc: 'Receive a verifiable digital certificate with a unique LinguaBridge ID upon completion.' },
               ].map(({ step, title, desc }, i) => (
                 <div key={step} className={`animate-fade-in-up animate-delay-${i * 100} flex flex-col items-start text-left gap-4 p-6 rounded-xl bg-background border border-border hover-lift transition-all`}>
                   <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-accent bg-primary text-accent font-bold text-lg">
@@ -193,147 +193,81 @@ export default async function HomePage() {
             </div>
             {/* Visual */}
             <div className="relative rounded-2xl overflow-hidden shadow-lg border border-border h-96 image-zoom">
-              <Image src="/campus-students.jpg" alt="IICAR students on campus" width={600} height={500} className="w-full h-full object-cover" priority />
+              <Image src="/images/linguabridge/short-course-learning.png" alt="Professional learner studying a LinguaBridge short course" width={600} height={500} className="w-full h-full object-cover" priority />
             </div>
           </div>
         </div>
       </section>
 
-      {/* USA ACCREDITATION */}
+      {/* QUALITY PRACTICES */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-primary/10 border-b border-primary/20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold text-primary">USA-Accredited Professional Institution</h2>
-            <p className="mt-3 text-muted-foreground">Acclaim Academic Institute, Inc. is duly incorporated and accredited in California, USA</p>
+            <h2 className="text-3xl font-bold text-primary">Quality You Can See</h2>
+            <p className="mt-3 text-muted-foreground">Clear processes, careful review, and practical learning built for international audiences.</p>
           </div>
-          <div className="max-w-3xl mx-auto bg-card border border-border rounded-xl p-10 shadow-sm">
-            <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-primary mb-4">Professional Credentials</h3>
-                <ul className="space-y-3 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span><strong>Registered Corporation:</strong> Acclaim Academic Institute, Inc.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span><strong>Jurisdiction:</strong> State of California, USA</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span><strong>Professional Standards:</strong> Meets USA educational accreditation requirements</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span><strong>Certifications:</strong> Globally recognised professional credentials</span>
-                  </li>
-                </ul>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              { title: 'Human-reviewed translations', desc: 'Documents are handled with care and reviewed for meaning, tone, and context before delivery.' },
+              { title: 'Transparent learning', desc: 'Short courses set clear outcomes, structured lessons, and practical assessments from the start.' },
+              { title: 'Secure delivery', desc: 'We keep communication focused, professional, and designed around the needs of each client.' },
+            ].map(({ title, desc }) => (
+              <div key={title} className="rounded-xl border border-border bg-card p-7 shadow-sm">
+                <CheckCircle className="mb-5 h-7 w-7 text-accent" />
+                <h3 className="text-lg font-semibold text-primary">{title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{desc}</p>
               </div>
-              <div className="flex-1 text-sm leading-relaxed text-muted-foreground bg-muted/20 p-6 rounded-lg border border-border">
-                <p className="mb-4">Our institution is a professional educational provider accredited in the United States. All programmes are delivered to the highest professional standards with rigorous quality assurance and transparent assessment processes.</p>
-                <p>Students receive verifiable, globally recognised certifications backed by our institutional accreditation and commitment to excellence.</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* INTERNATIONAL STANDARDS & CERTIFICATIONS */}
+      {/* INTERNATIONAL QUALITY */}
       <section className="py-20 bg-gradient-to-b from-background to-muted/30">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
             <h2 className="text-3xl font-bold text-primary">International Quality Standards</h2>
-            <p className="mt-3 text-muted-foreground">Aligned with global educational best practices and additional certifications</p>
+            <p className="mt-3 text-muted-foreground">A practical quality framework for language services and short-course learning.</p>
           </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
-            {/* COL Card */}
-            <div className="animate-fade-in-up flex flex-col gap-6 p-8 rounded-xl border-2 border-primary/20 bg-card hover:border-primary/40 hover:shadow-md hover-lift transition-all">
-              <div className="flex items-start justify-between">
-                <Image src="/col-logo.png" alt="Commonwealth of Learning" width={180} height={60} className="h-14 w-auto object-contain" />
-                <Badge className="bg-primary/20 text-primary border-primary/30">COL Standard Aligned</Badge>
+          <div className="grid gap-8 md:grid-cols-3">
+            {[
+              { icon: Globe, label: 'Global context', title: 'Built for international audiences', desc: 'Our services are designed to help people communicate, study, and work across borders.' },
+              { icon: Shield, label: 'Careful review', title: 'Quality through attention to detail', desc: 'We focus on accuracy, clarity, consistency, and a professional experience at every step.' },
+              { icon: BookOpen, label: 'Practical learning', title: 'Courses with useful outcomes', desc: 'Short courses are structured around accessible lessons and skills learners can apply in real life.' },
+            ].map(({ icon: Icon, label, title, desc }, i) => (
+              <div key={title} className={`animate-fade-in-up animate-delay-${i * 100} rounded-xl border border-border bg-card p-8 shadow-sm hover:shadow-md hover-lift transition-all`}>
+                <div className="mb-6 flex items-center justify-between">
+                  <div className="flex size-12 items-center justify-center rounded-lg bg-primary text-accent">
+                    <Icon className="size-6" />
+                  </div>
+                  <Badge variant="outline" className="border-primary/20 text-primary">{label}</Badge>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">{title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{desc}</p>
               </div>
-              <div>
-                <h3 className="text-lg font-semibold text-foreground mb-3">Commonwealth of Learning (COL)</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">Our curriculum follows COL standards, ensuring educational excellence and consistency across Commonwealth nations. COL is an intergovernmental organisation that promotes open and distance learning globally.</p>
-              </div>
-            </div>
-            
-            {/* GAOTE Certified Card */}
-            <div className="animate-fade-in-up animate-delay-100 flex flex-col gap-6 p-8 rounded-xl border-2 border-primary/20 bg-card hover:border-primary/40 hover:shadow-md hover-lift transition-all">
-              <div className="flex items-start justify-between">
-                <Image src="/gaote-logo.png" alt="GAOTE - Global Association of Online Trainers and Examiners" width={80} height={80} className="h-16 w-auto object-contain" />
-                <Badge className="bg-primary/20 text-primary border-primary/30">GAOTE Certified</Badge>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-foreground mb-3">GAOTE Certified</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">All programmes are certified by the Global Association of Online Trainers and Examiners (GAOTE), guaranteeing rigorous quality assurance and trainer excellence.</p>
-              </div>
-            </div>
-            
-            {/* GAOTE Standard Approved Card */}
-            <div className="animate-fade-in-up animate-delay-200 flex flex-col gap-6 p-8 rounded-xl border-2 border-primary/20 bg-card hover:border-primary/40 hover:shadow-md hover-lift transition-all">
-              <div className="flex items-start justify-between">
-                <Image src="/gaote-logo.png" alt="GAOTE Standard Approved" width={80} height={80} className="h-16 w-auto object-contain" />
-                <Badge className="bg-primary/20 text-primary border-primary/30">GAOTE Standard Approved</Badge>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-foreground mb-3">GAOTE Standard Approved</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">Our assessments and certification processes adhere to GAOTE Standard Approved guidelines, ensuring global recognition and professional credibility.</p>
-              </div>
-            </div>
+            ))}
           </div>
-          
-          {/* Standards Info Box */}
-          <div className="rounded-xl bg-primary/5 border border-primary/20 p-10">
-            <div className="max-w-3xl mx-auto">
-              <h3 className="text-xl font-semibold text-primary mb-4 text-center">What This Means for You</h3>
-              <ul className="grid gap-4 md:grid-cols-2 text-sm text-muted-foreground">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Credentials recognised by employers across Commonwealth nations</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Adherence to international educational quality standards</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Trainers and content meet GAOTE professional requirements</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Certified assessment processes ensure fairness and integrity</span>
-                </li>
-              </ul>
-            </div>
+          <div className="mt-10 rounded-xl border border-primary/20 bg-primary/5 p-8 text-center">
+            <p className="mx-auto max-w-3xl text-sm leading-relaxed text-muted-foreground">LinguaBridge keeps its service promise simple: communicate clearly, review carefully, and make language support more accessible across the world.</p>
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* EXTERNAL REVIEW REFERENCE */}
       <section className="relative bg-primary py-20 text-primary-foreground overflow-hidden">
-        <div className="mx-auto max-w-5xl px-6 relative z-10">
-          <h2 className="mb-14 text-center text-3xl font-bold">What Our Students Say</h2>
-          <div className="grid gap-8 md:grid-cols-3">
-            {[
-              { name: 'Amara N.', country: 'Nigeria', quote: 'IICAR gave me a credential that opened doors I never thought possible. The professional content is genuinely excellent.' },
-              { name: 'Raj P.', country: 'India', quote: 'I completed my certification while working full time. The self-paced structure is exactly what busy professionals need.' },
-              { name: 'Sofia M.', country: 'Brazil', quote: 'The verification feature is fantastic — my employer confirmed my certificate within minutes. Highly professional.' },
-            ].map(({ name, country, quote }) => (
-              <div key={name} className="rounded-xl bg-white/10 backdrop-blur-sm p-6 flex flex-col gap-4 border border-white/20 hover:bg-white/15 transition-colors">
-                <div className="flex gap-1">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-accent text-accent" />
-                  ))}
-                </div>
-                <p className="text-sm text-primary-foreground/90 leading-relaxed italic">&ldquo;{quote}&rdquo;</p>
-                <div className="mt-auto border-t border-white/10 pt-4">
-                  <p className="font-semibold text-sm">{name}</p>
-                  <p className="text-xs text-primary-foreground/60">{country}</p>
-                </div>
-              </div>
-            ))}
+        <div className="mx-auto max-w-3xl px-6 relative z-10 text-center">
+          <div className="mx-auto mb-6 flex size-14 items-center justify-center rounded-full bg-accent/15 text-accent">
+            <Star className="size-7 fill-accent" />
           </div>
+          <h2 className="text-3xl font-bold">Explore Independent Language-Service Reviews</h2>
+          <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-primary-foreground/80">
+            We believe trust starts with transparency. Explore independent language-service reviews on Trustpilot as an external industry reference, separate from LinguaBridge.
+          </p>
+          <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
+            <a href="https://www.trustpilot.com/review/iq-lingua.de" target="_blank" rel="noreferrer">
+              View us on Trustpilot <ChevronRight className="ml-2 size-4" />
+            </a>
+          </Button>
         </div>
       </section>
 
@@ -344,7 +278,7 @@ export default async function HomePage() {
             Limited Time Offer
           </Badge>
           <h2 className="text-4xl font-bold leading-tight md:text-5xl">Ready to Advance Your Career?</h2>
-          <p className="mt-6 text-lg text-primary-foreground/80 leading-relaxed">Join thousands of professionals who have earned globally recognised IICAR certifications. Start your journey today with a free account.</p>
+          <p className="mt-6 text-lg text-primary-foreground/80 leading-relaxed">Get the language support you need today, or build your next skill through a flexible LinguaBridge short course.</p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-10">
               <Link href="/auth/register">Create Free Account</Link>
@@ -362,13 +296,13 @@ export default async function HomePage() {
           <div className="grid gap-8 md:grid-cols-4 mb-12">
             <div className="md:col-span-1">
               <div className="flex items-center gap-3 mb-4">
-                <Image src="/logo.jpg" alt="IICAR" width={40} height={40} className="rounded-md" />
+                <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={40} height={40} className="rounded-md object-cover" />
                 <div>
-                  <p className="text-sm font-bold text-accent">IICAR</p>
-                  <p className="text-xs text-primary-foreground/50">Global College</p>
+                  <p className="text-sm font-bold text-accent">LinguaBridge</p>
+                  <p className="text-xs text-primary-foreground/50">Translations &amp; Short Courses</p>
                 </div>
               </div>
-              <p className="text-xs text-primary-foreground/60 leading-relaxed">Professional certification platform powering careers globally.</p>
+              <p className="text-xs text-primary-foreground/60 leading-relaxed">Urgent translations and practical short courses for a connected world.</p>
             </div>
             <div>
               <h4 className="text-sm font-semibold mb-3">Learn</h4>
@@ -396,9 +330,9 @@ export default async function HomePage() {
           </div>
           <div className="border-t border-white/10 pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-xs text-primary-foreground/40">&copy; {new Date().getFullYear()} IICAR Global College. All rights reserved.</p>
+              <p className="text-xs text-primary-foreground/40">&copy; {new Date().getFullYear()} LinguaBridge. All rights reserved.</p>
               <div className="flex gap-6 text-xs text-primary-foreground/60">
-                <span>Institute of International Career Advancement and Recognition</span>
+                <span>Bridging languages. Connecting worlds.</span>
               </div>
             </div>
           </div>

@@ -29,9 +29,9 @@ export function DashboardMobileNav({ profile, user }: Props) {
       {/* MOBILE HEADER */}
       <div className="md:hidden sticky top-0 z-40 border-b border-border bg-card px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Image src="/logo.jpg" alt="IICAR" width={32} height={32} className="rounded-lg" />
+          <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={32} height={32} className="rounded-lg object-cover" />
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest">IICAR</p>
+            <p className="text-xs font-bold uppercase tracking-widest">LinguaBridge</p>
             <p className="text-[9px] text-muted-foreground">Student</p>
           </div>
         </div>
