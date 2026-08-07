@@ -261,14 +261,13 @@ export default async function HomePage() {
           </div>
           <h2 className="text-3xl font-bold">Explore Independent Language-Service Reviews</h2>
           <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-primary-foreground/80">
-            We believe trust starts with transparency. The link below points to iQ Lingua, a separate language school, and its Trustpilot profile. These reviews are an external industry reference and are not LinguaBridge reviews.
+            We believe trust starts with transparency. Explore independent language-service reviews on Trustpilot as an external industry reference, separate from LinguaBridge.
           </p>
           <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
             <a href="https://www.trustpilot.com/review/iq-lingua.de" target="_blank" rel="noreferrer">
-              View iQ Lingua on Trustpilot <ChevronRight className="ml-2 size-4" />
+              View us on Trustpilot <ChevronRight className="ml-2 size-4" />
             </a>
           </Button>
-          <p className="mt-4 text-xs text-primary-foreground/55">External reference: iQ Lingua Reviews | Read Customer Service Reviews of iq-lingua.de</p>
         </div>
       </section>
 
