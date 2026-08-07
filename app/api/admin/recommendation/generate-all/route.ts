@@ -105,7 +105,7 @@ export async function POST(request: Request) {
           conclusionText,
           registrarName: 'Julia Thornton',
           registrarTitle: 'مكتب المسجل',
-          schoolName: 'مدرسة IICAR المهنية',
+          schoolName: 'LinguaBridge',
           generatedDate,
         })
         console.log('[v0] Arabic HTML generated successfully, length:', htmlContent.length)
@@ -141,7 +141,7 @@ export async function POST(request: Request) {
       doc.setFont('times', 'bold')
       doc.setFontSize(18)
       doc.setTextColor(255, 255, 255)
-      doc.text('IICAR GLOBAL COLLEGE', pageWidth / 2, 12, { align: 'center' })
+      doc.text('LINGUABRIDGE', pageWidth / 2, 12, { align: 'center' })
 
       // Subtitle
       doc.setFont('times', 'normal')
@@ -271,7 +271,7 @@ export async function POST(request: Request) {
       doc.setTextColor(80, 80, 80)
       doc.text('Office of the Registrar', 25, yPosition)
       yPosition += 4
-      doc.text('IICAR Global College', 25, yPosition)
+      doc.text('LinguaBridge', 25, yPosition)
 
       // Footer with decorative elements
       doc.setDrawColor(184, 134, 11)

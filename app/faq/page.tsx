@@ -12,14 +12,14 @@ export default function FAQPage() {
     {
       id: 'about-linguabridge',
       category: 'About LinguaBridge',
-      question: 'What is LinguaBridge Global College?',
-      answer: 'LinguaBridge Global College is a USA-accredited professional educational institution offering self-paced certification programs for working professionals. We are registered in California, USA and deliver industry-aligned courses that are recognized globally.'
+      question: 'What is LinguaBridge?',
+      answer: 'LinguaBridge provides urgent translation services and practical short courses for people and organisations working across languages and borders.'
     },
     {
       id: 'accreditation',
       category: 'About LinguaBridge',
-      question: 'Is LinguaBridge accredited?',
-      answer: 'Yes, LinguaBridge is a USA-accredited institution registered as Acclaim Academic Institute, Inc. in the State of California. All our programs meet professional accreditation standards and deliver certifications recognized internationally.'
+      question: 'How does LinguaBridge maintain quality?',
+      answer: 'LinguaBridge uses clear service standards, careful review, transparent course outcomes, and verifiable certificate processes. We describe our services accurately and do not present external organisations or review profiles as LinguaBridge credentials.'
     },
     {
       id: 'how-to-enroll',

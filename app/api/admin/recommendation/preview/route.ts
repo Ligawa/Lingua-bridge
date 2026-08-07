@@ -107,7 +107,7 @@ export async function GET(request: Request) {
       conclusionText,
       registrarName: 'Julia Thornton',
       registrarTitle: language === 'ar' ? 'مكتب المسجل' : 'Office of the Registrar',
-      schoolName: language === 'ar' ? 'مدرسة IICAR المهنية' : 'IICAR Global College',
+      schoolName: language === 'ar' ? 'LinguaBridge' : 'LinguaBridge',
       generatedDate,
     })
 
