@@ -31,10 +31,10 @@ export async function POST(request: NextRequest) {
     const blobFileName = `translations/${user.id}/${timestamp}-${fileName}`
 
     const uploadedFile = await put(blobFileName, buffer, {
-      access: 'public',
+      access: 'private',
     })
 
-    console.log('[v0] File uploaded to Blob:', uploadedFile.url)
+    console.log('[v0] File uploaded to private Blob storage:', uploadedFile.pathname)
 
     // Calculate total cost
     const totalCostCents = pages * languages.length * PRICE_PER_PAGE_PER_LANGUAGE_CENTS
@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
       .insert({
         user_id: user.id,
         document_name: fileName,
-        document_file_url: uploadedFile.url,
+        document_file_url: uploadedFile.pathname,
         total_pages: pages,
         languages_requested: languages,
         total_cost_cents: totalCostCents,
