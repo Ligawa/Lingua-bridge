@@ -42,7 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
         <Script
           id="zsiqscript"
-          src="https://salesiq.zohopublic.com/widget?wc=siqd1a796ef77dd6088fd85fc9962bd1534"
+          src="https://salesiq.zohopublic.com/widget?wc=siqb32a723f7c51b3b5604039a40fbec770fe0b6d979dc383c57340ac59f8651f3a"
           strategy="afterInteractive"
           defer
         />
