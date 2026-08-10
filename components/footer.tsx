@@ -1,45 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Mail, Download, MapPin, Phone, Mail as MailIcon, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
-import { NewsletterSubscription } from '@/components/newsletter-subscription'
+import { MapPin, Phone, Mail as MailIcon, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
 
 export function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-50 mt-20">
-      {/* Newsletter Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 py-12">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Stay Updated</h3>
-              <p className="text-blue-100">Get notified about new programs, promotions, and exclusive updates.</p>
-            </div>
-            <NewsletterSubscription />
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile App Download Section */}
-      <div className="bg-slate-800 py-8 border-b border-slate-700">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <h4 className="text-lg font-semibold mb-2">Download Our Mobile App</h4>
-              <p className="text-slate-300 text-sm">Access your courses and certificates on the go</p>
-            </div>
-            <a
-              href="https://median.co/share/odmyyym#apk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-all"
-            >
-              <Download className="h-5 w-5" />
-              Download APK
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -72,7 +37,6 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/dashboard/certificates" className="text-slate-400 hover:text-white transition">My Certificates</Link></li>
               <li><Link href="/dashboard" className="text-slate-400 hover:text-white transition">Dashboard</Link></li>
-              <li><a href="https://median.co/share/odmyyym#apk" className="text-slate-400 hover:text-white transition">Mobile App</a></li>
             </ul>
           </div>
 
