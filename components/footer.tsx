@@ -90,7 +90,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <MailIcon className="h-4 w-4 flex-shrink-0 text-blue-400" />
-                <a href="mailto:info@linguabridge.com" className="text-slate-400 hover:text-white transition">info@linguabridge.com</a>
+                <a href="mailto:info@linguab.com" className="text-slate-400 hover:text-white transition">info@linguab.com</a>
               </li>
             </ul>
           </div>
