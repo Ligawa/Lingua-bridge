@@ -40,6 +40,15 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Staff Portal */}
+          <div>
+            <h4 className="font-semibold mb-4">Staff Portal</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/admin" className="text-slate-400 hover:text-white transition">Staff Portal</Link></li>
+              <li><Link href="/admin/programs" className="text-slate-400 hover:text-white transition">Staff Programs</Link></li>
+            </ul>
+          </div>
+
           {/* Contact */}
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
