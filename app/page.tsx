@@ -290,54 +290,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="border-t border-border/50 bg-primary text-primary-foreground">
-        <div className="mx-auto max-w-7xl px-6 py-16">
-          <div className="grid gap-8 md:grid-cols-4 mb-12">
-            <div className="md:col-span-1">
-              <div className="flex items-center gap-3 mb-4">
-                <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%206%2C%202026%2C%2003_08_50%20PM-90soxHyLHqGFp3wNGrmkrGydAqqFzT.png" alt="LinguaBridge logo" width={40} height={40} className="rounded-md object-cover" />
-                <div>
-                  <p className="text-sm font-bold text-accent">LinguaBridge</p>
-                  <p className="text-xs text-primary-foreground/50">Translations &amp; Short Courses</p>
-                </div>
-              </div>
-              <p className="text-xs text-primary-foreground/60 leading-relaxed">Urgent translations and practical short courses for a connected world.</p>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold mb-3">Learn</h4>
-              <ul className="space-y-2 text-xs text-primary-foreground/70">
-                <li><Link href="#programs" className="hover:text-accent transition-colors">Programs</Link></li>
-                <li><Link href="#how-it-works" className="hover:text-accent transition-colors">How It Works</Link></li>
-                <li><Link href="/verify" className="hover:text-accent transition-colors">Verify Certificate</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold mb-3">Account</h4>
-              <ul className="space-y-2 text-xs text-primary-foreground/70">
-                <li><Link href="/auth/login" className="hover:text-accent transition-colors">Sign In</Link></li>
-                <li><Link href="/auth/register" className="hover:text-accent transition-colors">Register</Link></li>
-                <li><Link href="/dashboard" className="hover:text-accent transition-colors">Dashboard</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold mb-3">Admin</h4>
-              <ul className="space-y-2 text-xs text-primary-foreground/70">
-                <li><Link href="/admin" className="hover:text-accent transition-colors">Admin Portal</Link></li>
-                <li><Link href="/admin/programs" className="hover:text-accent transition-colors">Manage Programs</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-xs text-primary-foreground/40">&copy; {new Date().getFullYear()} LinguaBridge. All rights reserved.</p>
-              <div className="flex gap-6 text-xs text-primary-foreground/60">
-                <span>Bridging languages. Connecting worlds.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

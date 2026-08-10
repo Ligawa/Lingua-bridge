@@ -57,6 +57,9 @@ export function EnrollmentPayment({
 
       setPaymentId(data.paymentId)
       setPromptSent(true)
+      if (data.paymentUrl) {
+        window.open(data.paymentUrl, '_blank', 'noopener,noreferrer')
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Payment processing failed')
     } finally {

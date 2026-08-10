@@ -9,30 +9,56 @@ function getResendClient() {
   return new Resend(process.env.RESEND_API_KEY)
 }
 
+export async function sendPaymentLifecycleEmail(input: {
+  email: string
+  studentName: string
+  subject: string
+  heading: string
+  message: string
+  paymentUrl?: string
+}) {
+  const resend = getResendClient()
+  if (!resend) return false
+
+  try {
+    await resend.emails.send({
+      from: 'noreply@linguab.com',
+      to: input.email,
+      subject: input.subject,
+      html: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;padding:30px;color:#334155"><h2 style="color:#0f3d5e">${input.heading}</h2><p>Dear ${input.studentName},</p><p style="line-height:1.6">${input.message}</p>${input.paymentUrl ? `<p><a href="${input.paymentUrl}" style="display:inline-block;background:#0f3d5e;color:#fff;padding:12px 20px;text-decoration:none;border-radius:5px">Open secure payment link</a></p>` : ''}<p style="font-size:12px;color:#64748b;margin-top:32px">LinguaBridge · linguab.com</p></div>`,
+    })
+    return true
+  } catch (error) {
+    console.error('[LinguaBridge] Failed to send payment email:', error)
+    return false
+  }
+}
+
+
 export async function sendEnrollmentEmail(email: string, studentName: string, programTitle: string) {
   const resend = getResendClient()
   if (!resend) return false
   
   try {
     await resend.emails.send({
-      from: 'noreply@iicar.org',
+      from: 'noreply@linguab.com',
       to: email,
-      subject: `Welcome to ${programTitle} at IICAR!`,
+      subject: `Welcome to ${programTitle} at LinguaBridge`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background-color: #f8f4e6; padding: 20px; text-align: center; border-radius: 8px;">
-            <h2 style="color: #1a1a1a; margin: 0;">Welcome to IICAR</h2>
+            <h2 style="color: #1a1a1a; margin: 0;">Welcome to LinguaBridge</h2>
           </div>
           <div style="padding: 30px;">
             <p style="color: #333; font-size: 16px;">Dear ${studentName},</p>
             <p style="color: #555; font-size: 14px; line-height: 1.6;">
-              Congratulations on enrolling in <strong>${programTitle}</strong> at the International Institute for Certified Administrative Resources (IICAR).
+              Congratulations on enrolling in <strong>${programTitle}</strong> at the International Institute for Certified Administrative Resources (LinguaBridge).
             </p>
             <p style="color: #555; font-size: 14px; line-height: 1.6;">
               You now have access to all course materials, lessons, and assessments. Log in to your dashboard to begin your learning journey.
             </p>
             <div style="margin: 30px 0; text-align: center;">
-              <a href="https://iicar.org/dashboard" style="background-color: #184f7b; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">
+              <a href="https://linguab.com/dashboard" style="background-color: #184f7b; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">
                 Go to Dashboard
               </a>
             </div>
@@ -40,7 +66,7 @@ export async function sendEnrollmentEmail(email: string, studentName: string, pr
               If you have any questions, please contact our support team.
             </p>
             <p style="color: #999; font-size: 12px; margin-top: 40px;">
-              © 2024 IICAR. All rights reserved.
+              © 2024 LinguaBridge. All rights reserved.
             </p>
           </div>
         </div>
@@ -61,7 +87,7 @@ export async function sendExamCompletionEmail(email: string, studentName: string
   try {
     const passed = score >= 70
     await resend.emails.send({
-      from: 'noreply@iicar.org',
+      from: 'noreply@linguab.com',
       to: email,
       subject: passed ? `Congratulations! You Passed ${programTitle}` : `Final Exam Results for ${programTitle}`,
       html: `
@@ -87,7 +113,7 @@ export async function sendExamCompletionEmail(email: string, studentName: string
               </p>
             ` : ''}
             <div style="margin: 30px 0; text-align: center;">
-              <a href="https://iicar.org/dashboard/certificates" style="background-color: #184f7b; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">
+              <a href="https://linguab.com/dashboard/certificates" style="background-color: #184f7b; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">
                 ${passed ? 'Download Certificate' : 'View Results'}
               </a>
             </div>
@@ -109,9 +135,9 @@ export async function sendCertificateEmail(email: string, studentName: string, p
   
   try {
     await resend.emails.send({
-      from: 'noreply@iicar.org',
+      from: 'noreply@linguab.com',
       to: email,
-      subject: `Your ${programTitle} Certificate from IICAR`,
+      subject: `Your ${programTitle} Certificate from LinguaBridge`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background-color: #fef3c7; padding: 20px; text-align: center; border-radius: 8px;">
@@ -130,19 +156,19 @@ export async function sendCertificateEmail(email: string, studentName: string, p
                 <strong>Certificate Details:</strong><br>
                 Program: ${programTitle}<br>
                 Status: ✓ Completed<br>
-                Issuing Organization: IICAR
+                Issuing Organization: LinguaBridge
               </p>
             </div>
             <p style="color: #555; font-size: 14px; line-height: 1.6;">
               You can verify your certificate using the verification link on our website.
             </p>
             <div style="margin: 30px 0; text-align: center;">
-              <a href="https://iicar.org/dashboard/certificates" style="background-color: #184f7b; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">
+              <a href="https://linguab.com/dashboard/certificates" style="background-color: #184f7b; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">
                 View All Certificates
               </a>
             </div>
             <p style="color: #999; font-size: 12px; margin-top: 40px;">
-              © 2024 IICAR. All rights reserved.
+              © 2024 LinguaBridge. All rights reserved.
             </p>
           </div>
         </div>
