@@ -6,7 +6,7 @@ import { WalletTopupForm } from '@/components/wallet-topup-form'
 
 export const metadata = {
   title: 'Top Up Wallet | LinguaBridge',
-  description: 'Add funds to your wallet using Paystack',
+  description: 'Add funds to your wallet using Alghahim Pay',
 }
 
 export default async function WalletTopupPage() {
@@ -43,7 +43,7 @@ export default async function WalletTopupPage() {
           <p className="font-semibold text-foreground mb-2">How it works:</p>
           <ul className="list-disc list-inside space-y-1">
             <li>Choose an amount and proceed to payment</li>
-            <li>Complete payment via Paystack (credit/debit card, bank transfer)</li>
+            <li>Complete payment securely through Alghahim Pay</li>
             <li>Your wallet is credited instantly</li>
             <li>Use your wallet balance to enroll in paid courses</li>
           </ul>
